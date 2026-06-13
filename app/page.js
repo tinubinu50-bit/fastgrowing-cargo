@@ -144,31 +144,97 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY US — with image */}
-      <section style={{ position: 'relative', overflow: 'hidden', background: '#0A1628' }}>
-        <div style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: 'url(/images/truck-sunset.jpg)',
-          backgroundSize: 'cover', backgroundPosition: 'center',
-          opacity: 0.12, zIndex: 0
-        }} />
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '96px 24px' }}>
-          <div style={{ marginBottom: '56px' }}>
-            <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Why Choose Us</div>
-            <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', textTransform: 'uppercase', color: 'white' }}>Built on Trust.<br />Driven by Results.</h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '32px' }}>
-            {[
-              { icon: '🎯', title: 'Dedicated Fleet', desc: 'Assigned vehicles for consistent service quality — no sharing, no delays.' },
-              { icon: '📈', title: 'Scalable Capacity', desc: 'We ramp up fast during peak seasons to match your demand.' },
-              { icon: '💰', title: 'Cost Efficient', desc: 'Optimized routing keeps your per-shipment costs low.' },
-              { icon: '⭐', title: 'Proven Track Record', desc: '10+ years handling high-volume transport across the UAE.' },
-            ].map((item, i) => (
-              <WhyCard key={i} {...item} />
-            ))}
-          </div>
+    {/* WHY US  */}
+<section style={{ position: 'relative', overflow: 'hidden', background: '#0A1628' }}>
+  <div style={{
+    position: 'absolute', inset: 0,
+    backgroundImage: 'url(/images/truck-sunset.jpg)',
+    backgroundSize: 'cover', backgroundPosition: 'center',
+    opacity: 0.08, zIndex: 0
+  }} />
+  
+  <div style={{ 
+    position: 'relative', 
+    zIndex: 1, 
+    maxWidth: '1280px', 
+    margin: '0 auto', 
+    padding: '120px 32px' 
+  }}>
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+      gap: '64px',
+      alignItems: 'start'
+    }}>
+      
+      {/* Left Column: Core Heading */}
+      <div style={{ position: 'sticky', top: '40px' }}>
+        <div style={{ 
+          color: '#00AEEF', 
+          fontSize: '0.85rem', 
+          fontWeight: '700', 
+          letterSpacing: '4px', 
+          textTransform: 'uppercase', 
+          marginBottom: '16px' 
+        }}>
+          Why Choose Us
         </div>
-      </section>
+        <h2 style={{ 
+          fontFamily: 'Barlow Condensed, sans-serif', 
+          fontSize: '4rem', 
+          lineHeight: '1.1',
+          fontWeight: '800', 
+          textTransform: 'uppercase', 
+          color: 'white',
+          margin: 0
+        }}>
+          Built on Trust.<br />Driven by Results.
+        </h2>
+      </div>
+
+      {/* Right Column: Value Grid */}
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', 
+        gap: '48px 32px' 
+      }}>
+        {[
+          { icon: '🎯', title: 'Dedicated Fleet', desc: 'Assigned vehicles ensure consistent service quality with zero sharing or unexpected delays.' },
+          { icon: '📈', title: 'Scalable Capacity', desc: 'Rapid deployment models allow seamless scaling during peak seasons to match transport demand.' },
+          { icon: '💰', title: 'Cost Efficient', desc: 'Intelligent routing optimization keeps individual per-shipment costs consistently low.' },
+          { icon: '⭐', title: 'Proven Track Record', desc: 'Over a decade of experience managing high-volume enterprise logistics across the UAE.' },
+        ].map((item, i) => (
+          <div key={i} style={{
+            paddingLeft: '24px',
+            borderLeft: '2px solid rgba(0, 174, 239, 0.3)',
+            transition: 'border-color 0.3s ease'
+          }}>
+            <div style={{ fontSize: '1.8rem', marginBottom: '16px' }}>{item.icon}</div>
+            <h3 style={{ 
+              color: 'white', 
+              fontSize: '1.25rem', 
+              fontWeight: '700', 
+              marginBottom: '10px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px'
+            }}>
+              {item.title}
+            </h3>
+            <p style={{ 
+              color: '#94A3B8', 
+              fontSize: '0.95rem', 
+              lineHeight: '1.6', 
+              margin: 0 
+            }}>
+              {item.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section style={{ padding: '96px 24px', background: '#00AEEF', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
