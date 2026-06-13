@@ -73,26 +73,123 @@ export default function About() {
       </section>
 
       {/* MISSION */}
-      <section style={{ padding: '96px 24px', background: '#0A1628' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>What Drives Us</div>
-          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: 'white', textTransform: 'uppercase', marginBottom: '48px' }}>Our Mission & Values</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
-            {[
-              { icon: '🎯', title: 'Our Mission', desc: 'To provide dedicated, scalable, and cost-effective transportation solutions that support our clients\' growing operational needs across the UAE.' },
-              { icon: '⏰', title: 'On-Time Delivery', desc: 'Time is money in logistics. We operate 24/7 and optimize every route to ensure your cargo arrives when expected.' },
-              { icon: '🤝', title: 'Partnership First', desc: 'We don\'t just move cargo — we build long-term partnerships. Your growth is our growth.' },
-              { icon: '🔒', title: 'Reliability', desc: 'Dedicated fleet, trained personnel, and proven processes mean you can depend on us every single time.' },
-            ].map((v, i) => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(0,174,239,0.2)', borderRadius: '8px', padding: '32px 24px', borderBottom: '3px solid #00AEEF' }}>
-                <div style={{ fontSize: '2rem', marginBottom: '16px' }}>{v.icon}</div>
-                <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.3rem', fontWeight: '700', color: '#00AEEF', textTransform: 'uppercase', marginBottom: '10px' }}>{v.title}</h3>
-                <p style={{ fontSize: '0.9rem', color: '#b0c4de', lineHeight: '1.7' }}>{v.desc}</p>
-              </div>
-            ))}
-          </div>
+      <section style={{ padding: '120px 24px', background: '#0A1628' }}>
+  <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+      gap: '80px',
+      alignItems: 'start'
+    }}>
+      
+      {/* Left Column: Core Intent */}
+      <div>
+        <div style={{ 
+          color: '#00AEEF', 
+          fontSize: '0.85rem', 
+          fontWeight: '700', 
+          letterSpacing: '4px', 
+          textTransform: 'uppercase', 
+          marginBottom: '16px' 
+        }}>
+          What Drives Us
         </div>
-      </section>
+        <h2 style={{ 
+          fontFamily: 'Barlow Condensed, sans-serif', 
+          fontSize: '3.5rem', 
+          lineHeight: '1.1',
+          fontWeight: '800', 
+          textTransform: 'uppercase', 
+          color: 'white',
+          margin: 0
+        }}>
+          Our Core<br />Commitment.
+        </h2>
+      </div>
+
+      {/* Right Column: Grounded Values List */}
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: '1fr', 
+        gap: '40px' 
+      }}>
+        {[
+          { 
+            title: 'Fleet Reliability', 
+            desc: 'We operate our own trucks and employ trained drivers full-time. This eliminates middleman dependency and guarantees consistent service across your regular lanes.',
+            icon: (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6z" />
+              </svg>
+            )
+          },
+          { 
+            title: 'On-Time Execution', 
+            desc: 'Logistics depends on precise timing. Our dispatch teams actively track routes and coordinate warehouse turnarounds to prevent delays at delivery points.',
+            icon: (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            )
+          },
+          { 
+            title: 'Direct Account Handling', 
+            desc: 'No confusing call centers. You work directly with assigned transport coordinators who know your routes, pricing, and operational demands.',
+            icon: (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            )
+          }
+        ].map((item, i) => (
+          <div key={i} style={{ 
+            display: 'flex', 
+            gap: '24px', 
+            alignItems: 'start' 
+          }}>
+            <div style={{ 
+              background: 'rgba(0, 174, 239, 0.1)', 
+              padding: '12px', 
+              borderRadius: '4px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              {item.icon}
+            </div>
+            <div>
+              <h3 style={{ 
+                fontFamily: 'Barlow Condensed, sans-serif', 
+                fontSize: '1.4rem', 
+                fontWeight: '700', 
+                color: 'white', 
+                textTransform: 'uppercase', 
+                letterSpacing: '0.5px',
+                margin: '0 0 8px 0' 
+              }}>
+                {item.title}
+              </h3>
+              <p style={{ 
+                fontSize: '0.95rem', 
+                color: '#94A3B8', 
+                lineHeight: '1.6', 
+                margin: 0 
+              }}>
+                {item.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* MAP */}
       <section style={{ padding: '96px 24px', background: '#F5F7FA' }}>
