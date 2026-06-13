@@ -77,7 +77,7 @@ export default function Home() {
               <span style={{ color: '#00AEEF', WebkitTextStroke: '1px #00AEEF' }}>Forward.</span>
             </h1>
             <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.75)', marginBottom: '40px', maxWidth: '500px' }}>
-              We handle commercial haulage, site deliveries, and distribution contracts across Dubai and all over Emirates. With a fleet ranging from 1-ton pickups to 100-ton low beds, we move your cargo safely and on time.
+              Full-fledged logistics and transport with a diverse fleet and 10+ years of experience. From 1-ton pickups to 100-ton heavy loads — we deliver.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/contact" style={{
@@ -103,99 +103,22 @@ export default function Home() {
           <div style={{ width: '1px', height: '40px', background: 'linear-gradient(to bottom, rgba(0,174,239,0.8), transparent)' }} />
         </div>
       </section>
-{/* Stat Layout */}
-<section style={{ background: '#0A1628', padding: '120px 24px' }}>
-  <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-    <div style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
-      gap: '64px',
-      alignItems: 'center'
-    }}>
-      
-      {/* Left Side: Contextual Intro */}
-      <div>
-        <div style={{ 
-          color: '#00AEEF', 
-          fontSize: '0.85rem', 
-          fontWeight: '700', 
-          letterSpacing: '4px', 
-          textTransform: 'uppercase', 
-          marginBottom: '16px' 
-        }}>
-          Fleet Capability
+{/* STATS */}
+      <section style={{ background: '#00AEEF' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }} className="stats-grid">
+          {stats.map((s, i) => (
+            <div key={i} style={{ padding: '28px 16px', textAlign: 'center', borderRight: i % 2 === 0 ? '1px solid rgba(10,22,40,0.15)' : 'none', borderBottom: i < 2 ? '1px solid rgba(10,22,40,0.15)' : 'none' }}>
+              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', lineHeight: '1' }}>{s.number}</div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#0d2040', textTransform: 'uppercase', letterSpacing: '1px', marginTop: '4px' }}>{s.label}</div>
+            </div>
+          ))}
         </div>
-        
-        <h2 style={{ 
-          fontFamily: 'Barlow Condensed, sans-serif', 
-          fontSize: '3rem', 
-          lineHeight: '1.1',
-          fontWeight: '800', 
-          textTransform: 'uppercase', 
-          color: 'white',
-          marginBottom: '24px'
-        }}>
-          Direct Transport Solutions Across the UAE
-        </h2>
-        
-        <p style={{ color: '#94A3B8', fontSize: '1.05rem', lineHeight: '1.7', margin: 0 }}>
-          Real Times Cargo Transport LLC manages daily supply chain runs, warehouse movements, and heavy equipment transfers. Our dispatch desk operates around the clock to coordinate asset management, port clearances, and scheduled site drops without relying on third-party brokers.
-        </p>
-      </div>
-
-      {/* Right Side: Asymmetrical Stat Grid */}
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: '1fr 1fr', 
-        gap: '24px' 
-      }}>
-        {[
-          { value: '10+', label: 'Years on the Road', detail: 'Serving Dubai logistics since day one' },
-          { value: '24/7', label: 'Dispatch Desk', detail: 'Constant tracking and active route updates' },
-          { value: '20+', label: 'Vehicle Configurations', detail: 'From 1-ton city pickups to flatbeds' },
-          { value: '100T', label: 'Maximum Capacity', detail: 'Low beds engineered for oversized industrial loads' }
-        ].map((stat, i) => (
-          <div key={i} style={{ 
-            background: '#0D1E36', 
-            padding: '32px 24px', 
-            borderRadius: '4px',
-            borderTop: i < 2 ? '3px solid #00AEEF' : '3px solid transparent',
-            transition: 'transform 0.2s ease'
-          }}>
-            <div style={{ 
-              fontFamily: 'Barlow Condensed, sans-serif', 
-              fontSize: '3.5rem', 
-              fontWeight: '800', 
-              color: 'white',
-              lineHeight: '1',
-              marginBottom: '8px'
-            }}>
-              {stat.value}
-            </div>
-            <div style={{ 
-              color: '#00AEEF', 
-              fontSize: '0.95rem', 
-              fontWeight: '700', 
-              textTransform: 'uppercase',
-              letterSpacing: '0.5px',
-              marginBottom: '6px'
-            }}>
-              {stat.label}
-            </div>
-            <div style={{ 
-              color: '#64748B', 
-              fontSize: '0.85rem', 
-              lineHeight: '1.4' 
-            }}>
-              {stat.detail}
-            </div>
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </div>
-</section>
+        <style>{`
+          @media (min-width: 640px) {
+            .stats-grid { grid-template-columns: repeat(4, 1fr) !important; }
+          }
+        `}</style>
+      </section>
 
       {/* SERVICES */}
       <section style={{ padding: '96px 24px', background: '#F5F7FA' }}>
@@ -221,137 +144,31 @@ export default function Home() {
         </div>
       </section>
 
-   {/* WHY US */}
-<section style={{ position: 'relative', overflow: 'hidden', background: '#0A1628' }}>
-  <div style={{
-    position: 'absolute', inset: 0,
-    backgroundImage: 'url(/images/truck-sunset.jpg)',
-    backgroundSize: 'cover', backgroundPosition: 'center',
-    opacity: 0.08, zIndex: 0
-  }} />
-  
-  <div style={{ 
-    position: 'relative', 
-    zIndex: 1, 
-    maxWidth: '1280px', 
-    margin: '0 auto', 
-    padding: '120px 32px' 
-  }}>
-    <div style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
-      gap: '64px',
-      alignItems: 'start'
-    }}>
-      
-      {/* Left Column: Core Heading */}
-      <div style={{ position: 'sticky', top: '40px' }}>
-        <div style={{ 
-          color: '#00AEEF', 
-          fontSize: '0.85rem', 
-          fontWeight: '700', 
-          letterSpacing: '4px', 
-          textTransform: 'uppercase', 
-          marginBottom: '16px' 
-        }}>
-          Why Choose Us
-        </div>
-        <h2 style={{ 
-          fontFamily: 'Barlow Condensed, sans-serif', 
-          fontSize: '4rem', 
-          lineHeight: '1.1',
-          fontWeight: '800', 
-          textTransform: 'uppercase', 
-          color: 'white',
-          margin: 0
-        }}>
-          Built on Trust.<br />Driven by Results.
-        </h2>
-      </div>
-
-      {/* Right Column: Value Grid */}
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', 
-        gap: '48px 32px' 
-      }}>
-        {[
-          { 
-            title: 'Dedicated Fleet', 
-            desc: 'Assigned vehicles ensure consistent service quality with zero sharing or unexpected delays.',
-            icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
-                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-                <circle cx="5.5" cy="18.5" r="2.5" />
-                <circle cx="18.5" cy="18.5" r="2.5" />
-              </svg>
-            )
-          },
-          { 
-            title: 'Scalable Capacity', 
-            desc: 'Rapid deployment models allow seamless scaling during peak seasons to match transport demand.',
-            icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="18" y1="20" x2="18" y2="10" />
-                <line x1="12" y1="20" x2="12" y2="4" />
-                <line x1="6" y1="20" x2="6" y2="14" />
-              </svg>
-            )
-          },
-          { 
-            title: 'Cost Efficient', 
-            desc: 'Intelligent routing optimization keeps individual per-shipment costs consistently low.',
-            icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23" />
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
-            )
-          },
-          { 
-            title: 'Proven Track Record', 
-            desc: 'Over a decade of experience managing high-volume enterprise logistics across the UAE.',
-            icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-            )
-          },
-        ].map((item, i) => (
-          <div key={i} style={{
-            paddingLeft: '24px',
-            borderLeft: '2px solid rgba(0, 174, 239, 0.2)',
-          }}>
-            <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center' }}>
-              {item.icon}
-            </div>
-            <h3 style={{ 
-              color: 'white', 
-              fontSize: '1.25rem', 
-              fontWeight: '700', 
-              marginBottom: '10px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.5px'
-            }}>
-              {item.title}
-            </h3>
-            <p style={{ 
-              color: '#94A3B8', 
-              fontSize: '0.95rem', 
-              lineHeight: '1.6', 
-              margin: 0 
-            }}>
-              {item.desc}
-            </p>
+      {/* WHY US — with image */}
+      <section style={{ position: 'relative', overflow: 'hidden', background: '#0A1628' }}>
+        <div style={{
+          position: 'absolute', inset: 0,
+          backgroundImage: 'url(/images/truck-sunset.jpg)',
+          backgroundSize: 'cover', backgroundPosition: 'center',
+          opacity: 0.12, zIndex: 0
+        }} />
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', padding: '96px 24px' }}>
+          <div style={{ marginBottom: '56px' }}>
+            <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Why Choose Us</div>
+            <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', textTransform: 'uppercase', color: 'white' }}>Built on Trust.<br />Driven by Results.</h2>
           </div>
-        ))}
-      </div>
-
-    </div>
-  </div>
-</section>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '32px' }}>
+            {[
+              { icon: '🎯', title: 'Dedicated Fleet', desc: 'Assigned vehicles for consistent service quality — no sharing, no delays.' },
+              { icon: '📈', title: 'Scalable Capacity', desc: 'We ramp up fast during peak seasons to match your demand.' },
+              { icon: '💰', title: 'Cost Efficient', desc: 'Optimized routing keeps your per-shipment costs low.' },
+              { icon: '⭐', title: 'Proven Track Record', desc: '10+ years handling high-volume transport across the UAE.' },
+            ].map((item, i) => (
+              <WhyCard key={i} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section style={{ padding: '96px 24px', background: '#00AEEF', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
