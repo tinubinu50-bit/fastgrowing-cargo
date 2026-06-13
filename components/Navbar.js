@@ -20,7 +20,7 @@ export default function Navbar() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '70px' }}>
         <Link href="/" style={{ textDecoration: 'none' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <img src="/images/logo.png" alt="Real Times Cargo" style={{ height: '52px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
+            <img src="/images/logo.png" alt="Real Times Cargo" style={{ height: '52px', width: 'auto', objectFit: 'contain', mixBlendMode: 'screen' }} />
             <div>
               <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.1rem', fontWeight: '700', color: '#FFFFFF', letterSpacing: '0.5px', lineHeight: '1.1' }}>REAL TIMES CARGO</div>
               <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.65rem', color: '#00AEEF', letterSpacing: '1px', textTransform: 'uppercase' }}>Transport LLC</div>
