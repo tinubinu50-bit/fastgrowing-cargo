@@ -1,6 +1,7 @@
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata = {
   title: 'Real Times Cargo Transport LLC | Dubai Logistics',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main style={{ overflowX: 'hidden' }}>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   )

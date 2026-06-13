@@ -103,17 +103,21 @@ export default function Home() {
           <div style={{ width: '1px', height: '40px', background: 'linear-gradient(to bottom, rgba(0,174,239,0.8), transparent)' }} />
         </div>
       </section>
-
-      {/* STATS */}
+{/* STATS */}
       <section style={{ background: '#00AEEF' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }} className="stats-grid">
           {stats.map((s, i) => (
-            <div key={i} style={{ padding: '32px 16px', textAlign: 'center', borderRight: i < 3 ? '1px solid rgba(10,22,40,0.15)' : 'none' }}>
-              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', color: '#0A1628', lineHeight: '1' }}>{s.number}</div>
-              <div style={{ fontSize: '0.75rem', fontWeight: '700', color: '#0d2040', textTransform: 'uppercase', letterSpacing: '1.5px', marginTop: '4px' }}>{s.label}</div>
+            <div key={i} style={{ padding: '28px 16px', textAlign: 'center', borderRight: i % 2 === 0 ? '1px solid rgba(10,22,40,0.15)' : 'none', borderBottom: i < 2 ? '1px solid rgba(10,22,40,0.15)' : 'none' }}>
+              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', lineHeight: '1' }}>{s.number}</div>
+              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#0d2040', textTransform: 'uppercase', letterSpacing: '1px', marginTop: '4px' }}>{s.label}</div>
             </div>
           ))}
         </div>
+        <style>{`
+          @media (min-width: 640px) {
+            .stats-grid { grid-template-columns: repeat(4, 1fr) !important; }
+          }
+        `}</style>
       </section>
 
       {/* SERVICES */}
