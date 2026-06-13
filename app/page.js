@@ -77,7 +77,7 @@ export default function Home() {
               <span style={{ color: '#00AEEF', WebkitTextStroke: '1px #00AEEF' }}>Forward.</span>
             </h1>
             <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.75)', marginBottom: '40px', maxWidth: '500px' }}>
-              Full-fledged logistics and transport with a diverse fleet and 10+ years of experience. From 1-ton pickups to 100-ton heavy loads — we deliver.
+              We handle commercial haulage, site deliveries, and distribution contracts across Dubai and all over Emirates. With a fleet ranging from 1-ton pickups to 100-ton low beds, we move your cargo safely and on time.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/contact" style={{
@@ -103,22 +103,99 @@ export default function Home() {
           <div style={{ width: '1px', height: '40px', background: 'linear-gradient(to bottom, rgba(0,174,239,0.8), transparent)' }} />
         </div>
       </section>
-{/* STATS */}
-      <section style={{ background: '#00AEEF' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }} className="stats-grid">
-          {stats.map((s, i) => (
-            <div key={i} style={{ padding: '28px 16px', textAlign: 'center', borderRight: i % 2 === 0 ? '1px solid rgba(10,22,40,0.15)' : 'none', borderBottom: i < 2 ? '1px solid rgba(10,22,40,0.15)' : 'none' }}>
-              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', lineHeight: '1' }}>{s.number}</div>
-              <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#0d2040', textTransform: 'uppercase', letterSpacing: '1px', marginTop: '4px' }}>{s.label}</div>
-            </div>
-          ))}
+{/* Stat Layout */}
+<section style={{ background: '#0A1628', padding: '120px 24px' }}>
+  <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+      gap: '64px',
+      alignItems: 'center'
+    }}>
+      
+      {/* Left Side: Contextual Intro */}
+      <div>
+        <div style={{ 
+          color: '#00AEEF', 
+          fontSize: '0.85rem', 
+          fontWeight: '700', 
+          letterSpacing: '4px', 
+          textTransform: 'uppercase', 
+          marginBottom: '16px' 
+        }}>
+          Fleet Capability
         </div>
-        <style>{`
-          @media (min-width: 640px) {
-            .stats-grid { grid-template-columns: repeat(4, 1fr) !important; }
-          }
-        `}</style>
-      </section>
+        
+        <h2 style={{ 
+          fontFamily: 'Barlow Condensed, sans-serif', 
+          fontSize: '3rem', 
+          lineHeight: '1.1',
+          fontWeight: '800', 
+          textTransform: 'uppercase', 
+          color: 'white',
+          marginBottom: '24px'
+        }}>
+          Direct Transport Solutions Across the UAE
+        </h2>
+        
+        <p style={{ color: '#94A3B8', fontSize: '1.05rem', lineHeight: '1.7', margin: 0 }}>
+          Real Times Cargo Transport LLC manages daily supply chain runs, warehouse movements, and heavy equipment transfers. Our dispatch desk operates around the clock to coordinate asset management, port clearances, and scheduled site drops without relying on third-party brokers.
+        </p>
+      </div>
+
+      {/* Right Side: Asymmetrical Stat Grid */}
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: '1fr 1fr', 
+        gap: '24px' 
+      }}>
+        {[
+          { value: '10+', label: 'Years on the Road', detail: 'Serving Dubai logistics since day one' },
+          { value: '24/7', label: 'Dispatch Desk', detail: 'Constant tracking and active route updates' },
+          { value: '20+', label: 'Vehicle Configurations', detail: 'From 1-ton city pickups to flatbeds' },
+          { value: '100T', label: 'Maximum Capacity', detail: 'Low beds engineered for oversized industrial loads' }
+        ].map((stat, i) => (
+          <div key={i} style={{ 
+            background: '#0D1E36', 
+            padding: '32px 24px', 
+            borderRadius: '4px',
+            borderTop: i < 2 ? '3px solid #00AEEF' : '3px solid transparent',
+            transition: 'transform 0.2s ease'
+          }}>
+            <div style={{ 
+              fontFamily: 'Barlow Condensed, sans-serif', 
+              fontSize: '3.5rem', 
+              fontWeight: '800', 
+              color: 'white',
+              lineHeight: '1',
+              marginBottom: '8px'
+            }}>
+              {stat.value}
+            </div>
+            <div style={{ 
+              color: '#00AEEF', 
+              fontSize: '0.95rem', 
+              fontWeight: '700', 
+              textTransform: 'uppercase',
+              letterSpacing: '0.5px',
+              marginBottom: '6px'
+            }}>
+              {stat.label}
+            </div>
+            <div style={{ 
+              color: '#64748B', 
+              fontSize: '0.85rem', 
+              lineHeight: '1.4' 
+            }}>
+              {stat.detail}
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* SERVICES */}
       <section style={{ padding: '96px 24px', background: '#F5F7FA' }}>
