@@ -20,7 +20,7 @@ export const metadata = {
     siteName: 'Real Times Cargo Transport LLC',
     images: [
       {
-        url: '/images/hero-dubai.jpg',
+        url: '/images/truck-road.jpg',
         width: 1200,
         height: 630,
         alt: 'Real Times Cargo Transport LLC Dubai',
