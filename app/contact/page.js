@@ -19,7 +19,7 @@ export default function Contact() {
           <div>
             <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase', marginBottom: '32px' }}>Reach Out to Us</h2>
             {[
-              { icon: '📞', label: 'Phone', value: '00971 – 555897779', href: 'tel:00971555897779' },
+              { icon: '📞', label: 'Phone', value: '+971 – 568576065', href: 'tel:+971568576065' },
               { icon: '✉️', label: 'Email', value: 'info@fastgrowingcargo.ae', href: 'mailto:info@fastgrowingcargo.ae' },
               { icon: '📍', label: 'Location', value: 'Abu Dhabi, United Arab Emirates', href: null },
             ].map((c, i) => (

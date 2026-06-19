@@ -16,7 +16,7 @@ export default function About() {
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Who We Are</div>
           <h1 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.05', color: 'white' }}>
-            About Real Times<br /><span style={{ color: '##8B9FE8' }}>Cargo Transport</span>
+            About Fast Growing<br /><span style={{ color: '##8B9FE8' }}>Cargo Transport</span>
           </h1>
         </div>
       </section>
@@ -197,7 +197,7 @@ export default function About() {
           <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Find Us</div>
           <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase', marginBottom: '32px' }}>Our Office</h2>
           <div style={{ borderRadius: '10px', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.12)' }}>
-            <div style={{ fontSize: '0.95rem', color: '#444' }}>📍 <strong>Abu Dhabi, United Arab Emirates</strong></div>
+            
           </div>
           <div style={{ marginTop: '28px', display: 'flex', gap: '32px', flexWrap: 'wrap' }}>
             <div style={{ fontSize: '0.95rem', color: '#444' }}>📍 <strong>Abu Dhabi, United Arab Emirates</strong></div>

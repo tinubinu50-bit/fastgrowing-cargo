@@ -8,7 +8,7 @@ export default function Footer() {
           <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.3rem', fontWeight: '700', color: '#fff', marginBottom: '8px' }}>Fast Growing Cargo<br/>TRANSPORT LLC</div>
           <div style={{ fontSize: '0.85rem', lineHeight: '1.7', color: '#aaa' }}>Full-fledged logistics & transport in Abu Dhabi, UAE. 10+ years of experience.</div>
           <div style={{ marginTop: '16px', fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <a href="tel:00971555897779" style={{ color: '#8B9FE8', textDecoration: 'none' }}>📞 00971 – 555897779</a>
+            <a href="tel:+971568576065" style={{ color: '#8B9FE8', textDecoration: 'none' }}>📞 +971 – 568576065</a>
             <a href="mailto:info@fastgrowingcargo.ae" style={{ color: '#8B9FE8', textDecoration: 'none' }}>✉️ info@fastgrowingcargo.ae</a>
           </div>
         </div>
