@@ -14,7 +14,7 @@ const services = [
   { img: '/images/warehouse.jpg', title: 'Bulk & Warehouse', desc: 'High-volume cargo handling with the right vehicle for every load size.' },
   { img: '/images/fleet-aerial.jpg', title: 'Fleet Deployment', desc: 'Scalable fleet assigned to your operations during peak and regular seasons.' },
   { img: '/images/delivery.jpg', title: 'Last Mile Delivery', desc: 'Reliable last-mile delivery for retail, e-commerce and household goods.' },
-  { img: '/images/dubai-road.jpg', title: 'Urban Logistics', desc: 'Navigating Dubai\'s roads efficiently for time-sensitive urban deliveries.' },
+  { img: '/images/dubai-road.jpg', title: 'Urban Logistics', desc: 'Navigating Abu Dhabi\'s roads efficiently for time-sensitive urban deliveries.' },
   { img: '/images/dubai-truck.jpg', title: 'Heavy & Bulk', desc: 'Low beds and hydraulic trucks up to 100 TON for oversized industrial loads.' },
 ]
 
@@ -56,13 +56,13 @@ export default function Home() {
           zIndex: 1
         }} />
         {/* Cyan bottom line */}
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '4px', background: '#00AEEF', zIndex: 2 }} />
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '4px', background: '#8B9FE8', zIndex: 2 }} />
 
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 24px', width: '100%' }}>
           <div style={{ maxWidth: '650px' }}>
-            <div style={{ color: '#00AEEF', fontSize: '0.85rem', fontWeight: '700', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span style={{ display: 'inline-block', width: '32px', height: '2px', background: '#00AEEF' }} />
-              REAL TIMES CARGO TRANSPORT
+            <div style={{ color: '#8B9FE8', fontSize: '0.85rem', fontWeight: '700', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ display: 'inline-block', width: '32px', height: '2px', background: '#8B9FE8' }} />
+              Fast Growing Cargo Transport LLC
             </div>
             <h1 style={{
               fontFamily: 'Barlow Condensed, sans-serif',
@@ -74,14 +74,14 @@ export default function Home() {
               marginBottom: '24px',
             }}>
               Moving UAE<br />
-              <span style={{ color: '#00AEEF', WebkitTextStroke: '1px #00AEEF' }}>Forward.</span>
+              <span style={{ color: '#8B9FE8', WebkitTextStroke: '1px #8B9FE8' }}>Forward.</span>
             </h1>
             <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.75)', marginBottom: '40px', maxWidth: '500px' }}>
               Full-fledged logistics and transport with a diverse fleet and 10+ years of experience. From 1-ton pickups to 100-ton heavy loads — we deliver.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <Link href="/contact" style={{
-                background: '#00AEEF', color: '#0A1628', fontWeight: '700',
+                background: '#8B9FE8', color: '#1A1232', fontWeight: '700',
                 padding: '16px 36px', borderRadius: '4px', textDecoration: 'none',
                 fontSize: '1rem', letterSpacing: '0.5px',
                 boxShadow: '0 4px 24px rgba(0,174,239,0.35)',
@@ -104,11 +104,11 @@ export default function Home() {
         </div>
       </section>
 {/* STATS */}
-      <section style={{ background: '#00AEEF' }}>
+      <section style={{ background: '#8B9FE8' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }} className="stats-grid">
           {stats.map((s, i) => (
             <div key={i} style={{ padding: '28px 16px', textAlign: 'center', borderRight: i % 2 === 0 ? '1px solid rgba(10,22,40,0.15)' : 'none', borderBottom: i < 2 ? '1px solid rgba(10,22,40,0.15)' : 'none' }}>
-              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', lineHeight: '1' }}>{s.number}</div>
+              <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#1A1232', lineHeight: '1' }}>{s.number}</div>
               <div style={{ fontSize: '0.7rem', fontWeight: '700', color: '#0d2040', textTransform: 'uppercase', letterSpacing: '1px', marginTop: '4px' }}>{s.label}</div>
             </div>
           ))}
@@ -124,11 +124,11 @@ export default function Home() {
       <section style={{ padding: '96px 24px', background: '#F5F7FA' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '56px' }}>
-            <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span style={{ display: 'inline-block', width: '24px', height: '2px', background: '#00AEEF' }} />
+            <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ display: 'inline-block', width: '24px', height: '2px', background: '#8B9FE8' }} />
               What We Do
             </div>
-            <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', color: '#0A1628', textTransform: 'uppercase' }}>Our Services</h2>
+            <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase' }}>Our Services</h2>
             <p style={{ fontSize: '1rem', color: '#666', marginTop: '10px', maxWidth: '500px' }}>A complete range of transport solutions for every business need across the UAE.</p>
           </div>
 
@@ -139,13 +139,13 @@ export default function Home() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '56px' }}>
-            <Link href="/services" style={{ background: '#0A1628', color: 'white', padding: '16px 40px', borderRadius: '4px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', letterSpacing: '0.5px' }}>View Full Fleet & Services</Link>
+            <Link href="/services" style={{ background: '#1A1232', color: 'white', padding: '16px 40px', borderRadius: '4px', textDecoration: 'none', fontWeight: '600', fontSize: '1rem', letterSpacing: '0.5px' }}>View Full Fleet & Services</Link>
           </div>
         </div>
       </section>
 
       {/* WHY US — Premium Editorial Layout with Custom Icons */}
-<section style={{ position: 'relative', overflow: 'hidden', background: '#0A1628' }}>
+<section style={{ position: 'relative', overflow: 'hidden', background: '#1A1232' }}>
   <div style={{
     position: 'absolute', inset: 0,
     backgroundImage: 'url(/images/truck-sunset.jpg)',
@@ -170,7 +170,7 @@ export default function Home() {
       {/* Left Column: Core Heading */}
       <div style={{ position: 'sticky', top: '40px' }}>
         <div style={{ 
-          color: '#00AEEF', 
+          color: '#8B9FE8', 
           fontSize: '0.85rem', 
           fontWeight: '700', 
           letterSpacing: '4px', 
@@ -203,7 +203,7 @@ export default function Home() {
             title: 'Dedicated Fleet', 
             desc: 'Assigned vehicles ensure consistent service quality with zero sharing or unexpected delays.',
             icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B9FE8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
                 <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
                 <circle cx="5.5" cy="18.5" r="2.5" />
@@ -215,7 +215,7 @@ export default function Home() {
             title: 'Scalable Capacity', 
             desc: 'Rapid deployment models allow seamless scaling during peak seasons to match transport demand.',
             icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B9FE8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="18" y1="20" x2="18" y2="10" />
                 <line x1="12" y1="20" x2="12" y2="4" />
                 <line x1="6" y1="20" x2="6" y2="14" />
@@ -226,7 +226,7 @@ export default function Home() {
             title: 'Cost Efficient', 
             desc: 'Intelligent routing optimization keeps individual per-shipment costs consistently low.',
             icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B9FE8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="12" y1="1" x2="12" y2="23" />
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
@@ -236,7 +236,7 @@ export default function Home() {
             title: 'Proven Track Record', 
             desc: 'Over a decade of experience managing high-volume enterprise logistics across the UAE.',
             icon: (
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00AEEF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8B9FE8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
@@ -277,13 +277,13 @@ export default function Home() {
 </section>
 
       {/* CTA */}
-      <section style={{ padding: '96px 24px', background: '#00AEEF', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ padding: '96px 24px', background: '#8B9FE8', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(10,22,40,0.08)' }} />
         <div style={{ position: 'absolute', bottom: '-60px', left: '-60px', width: '400px', height: '400px', borderRadius: '50%', background: 'rgba(10,22,40,0.06)' }} />
         <div style={{ position: 'relative', maxWidth: '600px', margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '3.2rem', fontWeight: '700', color: '#0A1628', textTransform: 'uppercase', marginBottom: '16px' }}>Ready to Ship?</h2>
+          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '3.2rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase', marginBottom: '16px' }}>Ready to Ship?</h2>
           <p style={{ color: '#0d2040', fontSize: '1.1rem', marginBottom: '36px' }}>Get in touch today and let's build a transport solution that works for your business.</p>
-          <Link href="/contact" style={{ background: '#0A1628', color: 'white', padding: '16px 48px', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '1.1rem' }}>Get in Touch →</Link>
+          <Link href="/contact" style={{ background: '#1A1232', color: 'white', padding: '16px 48px', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '1.1rem' }}>Get in Touch →</Link>
         </div>
       </section>
 
@@ -330,13 +330,13 @@ function ServiceCard({ img, title, desc }) {
       <div style={{ padding: '24px' }}>
         <h3 style={{
           fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.4rem',
-          fontWeight: '700', color: hovered ? '#00AEEF' : '#0A1628',
+          fontWeight: '700', color: hovered ? '#8B9FE8' : '#1A1232',
           textTransform: 'uppercase', marginBottom: '8px',
           transition: 'color 0.3s'
         }}>{title}</h3>
         <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: '1.6' }}>{desc}</p>
         <div style={{
-          marginTop: '16px', color: '#00AEEF', fontSize: '0.85rem',
+          marginTop: '16px', color: '#8B9FE8', fontSize: '0.85rem',
           fontWeight: '700', letterSpacing: '1px',
           opacity: hovered ? 1 : 0, transform: hovered ? 'translateX(0)' : 'translateX(-8px)',
           transition: 'all 0.3s'
@@ -353,7 +353,7 @@ function WhyCard({ icon, title, desc }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        borderLeft: `3px solid ${hovered ? '#00AEEF' : 'rgba(0,174,239,0.4)'}`,
+        borderLeft: `3px solid ${hovered ? '#8B9FE8' : 'rgba(0,174,239,0.4)'}`,
         paddingLeft: '24px',
         paddingTop: '8px',
         paddingBottom: '8px',
@@ -363,7 +363,7 @@ function WhyCard({ icon, title, desc }) {
       }}
     >
       <div style={{ fontSize: '1.8rem', marginBottom: '10px' }}>{icon}</div>
-      <h4 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.2rem', fontWeight: '700', color: '#00AEEF', textTransform: 'uppercase', marginBottom: '8px' }}>{title}</h4>
+      <h4 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.2rem', fontWeight: '700', color: '#8B9FE8', textTransform: 'uppercase', marginBottom: '8px' }}>{title}</h4>
       <p style={{ color: '#b0c4de', fontSize: '0.9rem', lineHeight: '1.6' }}>{desc}</p>
     </div>
   )

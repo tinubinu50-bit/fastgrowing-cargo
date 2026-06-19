@@ -24,8 +24,8 @@ const fleet = [
 ]
 
 const categoryColors = {
-  'Light': '#00AEEF', 'Medium': '#1A3A6B', 'Reefer': '#0891b2',
-  'Flatbed': '#0A1628', 'Curtain': '#1e40af', 'Side Grill': '#1d4ed8',
+  'Light': '#8B9FE8', 'Medium': '#2D1F52', 'Reefer': '#0891b2',
+  'Flatbed': '#1A1232', 'Curtain': '#1e40af', 'Side Grill': '#1d4ed8',
   'Closed Box': '#1e3a5f', 'Heavy': '#dc2626', 'Crane': '#d97706',
 }
 
@@ -36,7 +36,7 @@ const serviceImages = [
   { img: '/images/warehouse.jpg', title: 'Bulk Deliveries', desc: 'High-volume cargo handling with the right vehicle for every load size — from 1 ton to 100 tons.' },
   { img: '/images/fleet-aerial.jpg', title: 'Fleet Management', desc: 'Scalable, dedicated fleet deployment to match your operational peaks and regular needs.' },
   { img: '/images/delivery.jpg', title: 'Last Mile & Furniture', desc: 'Delivery and installation of TVs, refrigerators, washing machines, and household goods.' },
-  { img: '/images/dubai-road.jpg', title: 'Urban Logistics', desc: 'Fast, reliable deliveries across Dubai\'s urban network, navigated by experienced drivers.' },
+  { img: '/images/dubai-road.jpg', title: 'Urban Logistics', desc: 'Fast, reliable deliveries across Abu Dhabi\'s urban network, navigated by experienced drivers.' },
   { img: '/images/dubai-truck.jpg', title: 'Heavy Industrial', desc: 'Hydraulic low beds and crane trucks for machinery, equipment, and oversized industrial loads.' },
 ]
 
@@ -51,11 +51,11 @@ export default function Services() {
       <section style={{ position: 'relative', height: '400px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
         <div style={{ position: 'absolute', inset: '-10%', backgroundImage: 'url(/images/fleet-aerial.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.55) 100%)', zIndex: 1 }} />
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '4px', background: '#00AEEF', zIndex: 2 }} />
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '4px', background: '#8B9FE8', zIndex: 2 }} />
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>What We Offer</div>
+          <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>What We Offer</div>
           <h1 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: '700', textTransform: 'uppercase', lineHeight: '1.05', color: 'white' }}>
-            Our Fleet &<br /><span style={{ color: '#00AEEF' }}>Services</span>
+            Our Fleet &<br /><span style={{ color: '#8B9FE8' }}>Services</span>
           </h1>
           <p style={{ marginTop: '16px', color: 'rgba(255,255,255,0.7)', fontSize: '1rem', maxWidth: '480px' }}>18+ vehicle types, operating 24/7 across the UAE.</p>
         </div>
@@ -64,8 +64,8 @@ export default function Services() {
       {/* SERVICE CARDS WITH IMAGES */}
       <section style={{ padding: '96px 24px', background: '#fff' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Core Operations</div>
-          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', textTransform: 'uppercase', marginBottom: '48px' }}>What We Specialize In</h2>
+          <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Core Operations</div>
+          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase', marginBottom: '48px' }}>What We Specialize In</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
             {serviceImages.map((s, i) => (
               <ServiceImageCard key={i} {...s} />
@@ -77,20 +77,20 @@ export default function Services() {
       {/* FLEET with filter */}
       <section style={{ padding: '96px 24px', background: '#F5F7FA' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ color: '#00AEEF', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Our Vehicles</div>
-          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#0A1628', textTransform: 'uppercase', marginBottom: '32px' }}>Full Fleet Overview</h2>
+          <div style={{ color: '#8B9FE8', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '12px' }}>Our Vehicles</div>
+          <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.4rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase', marginBottom: '32px' }}>Full Fleet Overview</h2>
 
           {/* Filter buttons */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '40px' }}>
             {categories.map(cat => (
               <button key={cat} onClick={() => setActiveFilter(cat)} style={{
                 padding: '8px 18px', borderRadius: '4px', border: 'none', cursor: 'pointer',
-                background: activeFilter === cat ? '#0A1628' : 'white',
+                background: activeFilter === cat ? '#1A1232' : 'white',
                 color: activeFilter === cat ? 'white' : '#555',
                 fontWeight: '600', fontSize: '0.85rem',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
                 transition: 'all 0.2s',
-                borderBottom: activeFilter === cat ? '2px solid #00AEEF' : '2px solid transparent'
+                borderBottom: activeFilter === cat ? '2px solid #8B9FE8' : '2px solid transparent'
               }}>{cat}</button>
             ))}
           </div>
@@ -104,11 +104,11 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: '80px 24px', background: '#0A1628', textAlign: 'center' }}>
+      <section style={{ padding: '80px 24px', background: '#1A1232', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '2.8rem', fontWeight: '700', color: 'white', textTransform: 'uppercase', marginBottom: '16px' }}>Need a Specific Vehicle?</h2>
           <p style={{ color: '#b0c4de', fontSize: '1rem', marginBottom: '32px' }}>Tell us your cargo requirements and we'll match you with the right fleet solution.</p>
-          <Link href="/contact" style={{ background: '#00AEEF', color: '#0A1628', padding: '16px 40px', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '1rem' }}>Request a Quote</Link>
+          <Link href="/contact" style={{ background: '#8B9FE8', color: '#1A1232', padding: '16px 40px', borderRadius: '4px', textDecoration: 'none', fontWeight: '700', fontSize: '1rem' }}>Request a Quote</Link>
         </div>
       </section>
     </>
@@ -125,7 +125,7 @@ function ServiceImageCard({ img, title, desc }) {
         <div style={{ position: 'absolute', inset: 0, background: hovered ? 'rgba(0,174,239,0.2)' : 'rgba(10,22,40,0.15)', transition: 'background 0.3s' }} />
       </div>
       <div style={{ padding: '24px', background: 'white' }}>
-        <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.4rem', fontWeight: '700', color: hovered ? '#00AEEF' : '#0A1628', textTransform: 'uppercase', marginBottom: '8px', transition: 'color 0.3s' }}>{title}</h3>
+        <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.4rem', fontWeight: '700', color: hovered ? '#8B9FE8' : '#1A1232', textTransform: 'uppercase', marginBottom: '8px', transition: 'color 0.3s' }}>{title}</h3>
         <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: '1.6' }}>{desc}</p>
       </div>
     </div>
@@ -136,12 +136,12 @@ function FleetCard({ name, capacity, category, desc }) {
   const [hovered, setHovered] = useState(false)
   return (
     <div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
-      style={{ background: 'white', borderRadius: '6px', padding: '24px 20px', boxShadow: hovered ? '0 12px 32px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.06)', borderTop: `3px solid ${categoryColors[category] || '#00AEEF'}`, transform: hovered ? 'translateY(-4px)' : 'translateY(0)', transition: 'all 0.25s' }}>
+      style={{ background: 'white', borderRadius: '6px', padding: '24px 20px', boxShadow: hovered ? '0 12px 32px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.06)', borderTop: `3px solid ${categoryColors[category] || '#8B9FE8'}`, transform: hovered ? 'translateY(-4px)' : 'translateY(0)', transition: 'all 0.25s' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
-        <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.2rem', fontWeight: '700', color: '#0A1628', textTransform: 'uppercase' }}>{name}</h3>
-        <span style={{ background: categoryColors[category] || '#00AEEF', color: 'white', fontSize: '0.7rem', fontWeight: '700', padding: '3px 8px', borderRadius: '3px', whiteSpace: 'nowrap', marginLeft: '8px' }}>{category}</span>
+        <h3 style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.2rem', fontWeight: '700', color: '#1A1232', textTransform: 'uppercase' }}>{name}</h3>
+        <span style={{ background: categoryColors[category] || '#8B9FE8', color: 'white', fontSize: '0.7rem', fontWeight: '700', padding: '3px 8px', borderRadius: '3px', whiteSpace: 'nowrap', marginLeft: '8px' }}>{category}</span>
       </div>
-      <div style={{ fontSize: '0.85rem', color: '#00AEEF', fontWeight: '700', marginBottom: '8px' }}>Capacity: {capacity}</div>
+      <div style={{ fontSize: '0.85rem', color: '#8B9FE8', fontWeight: '700', marginBottom: '8px' }}>Capacity: {capacity}</div>
       <p style={{ fontSize: '0.85rem', color: '#666', lineHeight: '1.5' }}>{desc}</p>
     </div>
   )
