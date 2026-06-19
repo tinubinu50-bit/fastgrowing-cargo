@@ -32,7 +32,7 @@ export default function Footer() {
         <div>
           <div style={{ color: '#8B9FE8', fontWeight: '700', fontSize: '0.8rem', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '16px' }}>Location</div>
           <div style={{ fontSize: '0.9rem', color: '#aaa', lineHeight: '1.7' }}>Abu Dhabi, United Arab Emirates</div>
-          <a href="https://www.realtimestc.com" style={{ color: '#8B9FE8', fontSize: '0.9rem', display: 'block', marginTop: '12px' }}>www.realtimestc.com</a>
+          <a href="https://www.fastgrowingcargo.com" style={{ color: '#8B9FE8', fontSize: '0.9rem', display: 'block', marginTop: '12px' }}>www.fastgrowingcargo.com</a>
         </div>
       </div>
 
